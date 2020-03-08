@@ -1,0 +1,6 @@
+<%= link_to '新規投稿', new_message_path %>
+<hr>
+<% @messages.each do |message| %>
+  【投稿者名】 <%= message.user.name %> 【内容】 <%= message.content %>
+  <hr>
+<% end %>
